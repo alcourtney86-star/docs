@@ -1,0 +1,183 @@
+---
+title: "Song Editor: Edit and Arrange Your Songs Section by Section"
+sidebarTitle: "Song Editor"
+description: "Use Suno's waveform-based Song Editor to reorder sections, replace lyrics, add fades, and fine-tune section transitions in your track."
+---
+
+The Song Editor gives you precise, section-by-section control over your songs. Whether you want to swap a verse, rewrite a chorus, polish a transition, or trim the ending, everything happens in a visual waveform interface without ever leaving your browser.
+
+<Note>
+  Basic editing tools — including Crop and Fade — are available on the Free plan. Advanced editing features such as Quick Replace, Add Section, Edit Lyrics, and fine-tune transitions require a **Pro or Premier** plan.
+</Note>
+
+## Opening the Song Editor
+
+Navigate to your Library or Workspace, find the song you want to edit, and click its title or thumbnail to open the Song Player. Then select **Edit** (or the pencil icon) to launch the Song Editor. Your song loads as a color-coded timeline of named sections.
+
+The editor **auto-saves continuously** — there is no Save button. Every change is preserved automatically as you work.
+
+---
+
+## Understanding the Interface
+
+The Song Editor displays your track as a horizontal timeline of **section clips**, each representing a named part of the song (Intro, Verse, Chorus, Bridge, Outro, and so on). Each section is color-coded for easy identification. Key controls include:
+
+- **Timeline** — the main waveform view showing all sections in order
+- **Edits Library** — a panel on the right that holds previews of replacement candidates
+- **Tempo display** — shown at the bottom of the editor
+- **Stems icon** — top-right corner; opens the Stem Extraction panel
+- **+ button** (far right of the track) — adds a new extension to the end of the song
+
+---
+
+## Core Editing Workflows
+
+### Replacing a Section
+
+Use Replace when you want a fresh version of an existing section — either instantly or guided by a prompt.
+
+<Steps>
+  <Step title="Select the section">
+    Click the section clip you want to replace. It becomes highlighted in the timeline.
+  </Step>
+  <Step title="Choose your replace method">
+    - **Quick Replace** — click the orange **Replace** button that appears on the selected section. Suno immediately generates a new version of that section.
+    - **Replace with prompt** — click **Replace**, then type a descriptive prompt (for example, *"make this dreamier"* or *"add a gospel feel"*) before generating.
+  </Step>
+  <Step title="Preview in the Edits Library">
+    New candidates appear in the **Edits Library** panel on the right. Click any candidate to audition it against the rest of the track.
+  </Step>
+  <Step title="Commit your choice">
+    When you find the version you want, click **Commit** to replace the section on the timeline. The original is preserved in the Edits Library until you close the session.
+  </Step>
+</Steps>
+
+---
+
+### Adding a New Section
+
+<Steps>
+  <Step title="Find the insertion point">
+    Hover between two existing sections on the timeline. A **+** icon appears in the gap.
+  </Step>
+  <Step title="Open the Add Section panel">
+    Click the **+** icon to open the section creation panel.
+  </Step>
+  <Step title="Write lyrics and set length">
+    Enter the lyrics you want for the new section and specify a **beat count** to control its length.
+  </Step>
+  <Step title="Generate and preview">
+    Click **Create Section**. Suno generates **2 versions** for you to audition side by side.
+  </Step>
+  <Step title="Commit">
+    Select the version you prefer and click **Commit** to insert it into the timeline.
+  </Step>
+</Steps>
+
+---
+
+### Editing Lyrics
+
+<Steps>
+  <Step title="Highlight the region">
+    Click and drag on the waveform to highlight the portion of the section whose lyrics you want to change.
+  </Step>
+  <Step title="Open Edit Lyrics">
+    With the region selected, click **Edit Lyrics** in the toolbar.
+  </Step>
+  <Step title="Update the lyrics">
+    The current lyrics appear in the **Replace Lyrics** box. Edit them directly — fix a word, rewrite a line, or change the entire passage.
+  </Step>
+  <Step title="Replace the section">
+    Click **Replace Section**. Suno regenerates the section with your updated lyrics and adds candidates to the Edits Library for you to review before committing.
+  </Step>
+</Steps>
+
+---
+
+### Reordering Sections
+
+To move a section to a different position in the song:
+
+<Steps>
+  <Step title="Hover over the section name">
+    Move your cursor over the section's name label on the timeline clip.
+  </Step>
+  <Step title="Grab the clip">
+    When the **grab tool** (a hand or move cursor) appears, click and hold.
+  </Step>
+  <Step title="Drag to the new position">
+    Drag the clip left or right to its new location. Other sections shift to accommodate it. Release to drop.
+  </Step>
+</Steps>
+
+<Tip>
+  Reordering is particularly useful for swapping verses — for example, moving Verse 2 before Verse 1 to see if it makes a stronger opening.
+</Tip>
+
+---
+
+### Extending the Song
+
+To add new material to the end of your track:
+
+<Steps>
+  <Step title="Click the + at the far right">
+    At the very end of the timeline, click the **+** button.
+  </Step>
+  <Step title="Choose your extension method">
+    - **Quick Extend** — Suno automatically generates a seamless continuation with no additional input.
+    - **Extend with prompt** — type a prompt to steer the continuation (for example, *"build to a big finale"* or *"fade out with acoustic guitar"*).
+  </Step>
+  <Step title="Preview and commit">
+    Audition the generated extension in the Edits Library, then click **Commit** to append it to the track.
+  </Step>
+</Steps>
+
+---
+
+## Additional Editing Tools
+
+<AccordionGroup>
+  <Accordion title="Fade In and Fade Out">
+    To add a fade at the beginning or end of your song, click the **fade icon** in the bottom corner of the first section (for Fade In) or the last section (for Fade Out). Once the fade is active, drag its edge handle on the waveform to adjust the length of the fade. Longer drags create a more gradual fade; shorter drags create a quick drop.
+  </Accordion>
+
+  <Accordion title="Crop and Split">
+    Highlight a region on the waveform, then open **More Actions (...)** in the toolbar:
+    - **Split** — divides the highlighted region into two separate section clips at the cut point. Useful for isolating a phrase you want to replace independently.
+    - **Crop** — trims the song to only the highlighted region, removing everything outside the selection.
+  </Accordion>
+
+  <Accordion title="Removing a Section">
+    Click to select the section you want to remove. Then either click **Remove** in the toolbar or press the **Delete** key on your keyboard. The section is removed and adjacent sections close the gap automatically.
+  </Accordion>
+
+  <Accordion title="Fine-Tuning Transitions">
+    After committing a replacement, a **boundary line** appears on the waveform at the join between the original and the replacement clip. Drag this boundary line left or right to shift the exact point where the transition occurs, letting you pick the smoothest-sounding crossover frame by frame.
+  </Accordion>
+
+  <Accordion title="Editing Section Names and Colors">
+    Click **More Actions (...)** on any section clip to rename the section or change its color. Renaming sections keeps your timeline organized when working on long or complex arrangements. Color-coding helps you distinguish song parts at a glance.
+  </Accordion>
+
+  <Accordion title="Accessing Stems">
+    Click the **Stems icon** in the top-right corner of the Song Editor to open the Stem Extraction panel directly from within the editor. Stem extraction requires a Pro or Premier plan.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Tips for Best Results
+
+<Tip>
+  When replacing a section with a prompt, be specific about the *feeling* you want rather than technical instructions — for example, *"melancholic piano, slower and more intimate"* tends to work better than *"change key to D minor."*
+</Tip>
+
+<Tip>
+  Use the **Edits Library** as a scratch pad. Generate several candidates for the same section before committing — you can keep generating without losing earlier options.
+</Tip>
+
+<Tip>
+  Check the **tempo display** at the bottom of the editor before adding sections. New sections generated at a mismatched tempo can feel off. Use Adjust Speed (available via More Actions on the song) to align the tempo first.
+</Tip>

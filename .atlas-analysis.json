@@ -1,0 +1,89 @@
+{
+  "projectType": "saas",
+  "projectName": "Suno",
+  "projectDescription": "Suno is an AI-powered music generation platform that lets anyone create complete, original songs — vocals, lyrics, and full production — from a simple text prompt.",
+  "theme": "almond",
+  "primaryColor": "#fc6627",
+  "lightColor": "#fceee9",
+  "darkColor": "#040404",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans-and-credits"
+            ]
+          },
+          {
+            "group": "Creating Music",
+            "pages": [
+              "creating/writing-prompts",
+              "creating/custom-mode",
+              "creating/voices-and-styles",
+              "creating/upload-audio"
+            ]
+          },
+          {
+            "group": "Editing",
+            "pages": [
+              "editing/song-editor",
+              "editing/extend-and-remix",
+              "editing/stem-extraction",
+              "editing/suno-studio"
+            ]
+          },
+          {
+            "group": "Account & Library",
+            "pages": [
+              "account/library",
+              "account/sharing",
+              "account/commercial-rights"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/common-questions",
+              "faq/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Text-to-song generation with vocals, lyrics, and full production",
+    "AI model versions (v4, v4.5, v5, v5.5) with progressively better quality",
+    "Song Editor for section-by-section editing, reordering, and replacement",
+    "Stem extraction into up to 12 time-aligned WAV/MIDI stems",
+    "Suno Studio — browser-based generative audio workstation (DAW)",
+    "Custom models tuned on your own audio",
+    "Persona voices for consistent vocal identity",
+    "Upload and remix your own audio (up to 30 minutes)",
+    "Creative sliders for weirdness, style, and structure control",
+    "Commercial use rights on paid plans",
+    "Mobile app on iOS and Android"
+  ],
+  "publicApiSurface": [
+    "Create (text-to-song generation with prompt)",
+    "Custom Mode (manual lyrics + style tags)",
+    "Remix / Extend song",
+    "Replace Section",
+    "Edit Lyrics",
+    "Get Stems (Auto, Split from mix, Advanced 12-track)",
+    "Upload Audio",
+    "Song Editor waveform interface",
+    "Suno Studio multitrack timeline",
+    "Export (Full Song, Selected Range, Multitracks)",
+    "Library (personal song catalog)",
+    "Voices (vocal style selection)",
+    "Inspo (reference-based generation)",
+    "Creative Sliders (weirdness, structure)",
+    "Plans: Free, Pro ($8/mo), Premier ($24/mo)"
+  ]
+}

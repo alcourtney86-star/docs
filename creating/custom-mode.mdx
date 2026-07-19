@@ -1,0 +1,190 @@
+---
+title: "Custom Mode: Write Your Own Lyrics in Suno"
+sidebarTitle: "Custom Mode"
+description: "Use Custom Mode to write your own lyrics, set style tags manually, and control exactly how your Suno song is structured from intro to outro."
+---
+
+Custom Mode hands you the steering wheel. Instead of describing a song and letting Suno decide the words, you write the lyrics yourself, define the style, and name the track — giving you precise control over every section of the song. It's the best way to bring a fully-formed creative vision to life.
+
+## Enabling Custom Mode
+
+Toggle **Custom** at the top of the Create panel. The prompt field expands into three separate fields: **Lyrics**, **Style**, and **Title**.
+
+<Steps>
+  <Step title="Open the Create panel">
+    Navigate to the Create page and locate the prompt area at the top of the screen.
+  </Step>
+  <Step title="Toggle Custom Mode on">
+    Click the **Custom** toggle. The single prompt field splits into Lyrics, Style, and Title fields.
+  </Step>
+  <Step title="Fill in your details">
+    Write your lyrics, describe your style, and give your song a title. Then click **Create** to generate two variations.
+  </Step>
+</Steps>
+
+<Note>
+  Custom Mode generations cost the same as standard generations — **5 credits** per run, producing 2 song variations.
+</Note>
+
+## The Three Fields
+
+### Lyrics
+
+This is where you write the words Suno will sing. Use **structural tags** in square brackets to tell Suno how to treat each section. Tags are case-insensitive — `[Chorus]`, `[chorus]`, and `[CHORUS]` all work the same way.
+
+### Style
+
+Describe the sonic character of the song in plain language. Think of this as a condensed version of a standard Suno prompt — genre, subgenre, vocal style, key instruments, and energy level. **Keep it under 120 characters** for best results; longer descriptions can dilute the signal.
+
+### Title
+
+Give your song a name. The title can influence the overall tone and lyrical theme, so choose something that reflects the mood you're going for.
+
+## Structural Tags
+
+Tags tell Suno where one section ends and another begins, and how to arrange the music around your lyrics.
+
+| Tag | Purpose |
+|---|---|
+| `[Intro]` | Opening instrumental or scene-setting section |
+| `[Verse]` | Main storytelling section, typically lower energy |
+| `[Pre-Chorus]` | Build-up before the chorus hits |
+| `[Chorus]` | High-energy, hook-driven section — the memorable part |
+| `[Post-Chorus]` | Cool-down or echo after the chorus |
+| `[Bridge]` | Contrasting section that breaks the verse-chorus pattern |
+| `[Outro]` | Closing section, often a fade or final statement |
+| `[Instrumental]` | Signals a section with no vocals — music only |
+| `[Break]` | A brief rhythmic or melodic pause |
+| `[Hook]` | A short, catchy repeated phrase |
+| `[Solo]` | Instrumental solo (great for guitar, piano, or sax solos) |
+
+<Tip>
+  You can stack multiple tags on a single section — for example, `[Verse][Quiet]` or `[Chorus][Intense]` — to add expressive direction to a structural marker.
+</Tip>
+
+## Complete Song Structure Example
+
+Here's a full example of a pop song written in Custom Mode.
+
+<CodeGroup>
+
+```text Lyrics
+[Intro]
+
+[Verse]
+Empty coffee cups line the windowsill
+The morning light is cold and standing still
+I wrote your name in the dust on the floor
+Then I swept it away like I've done before
+
+[Pre-Chorus]
+I keep saying I'm fine
+But my hands give me away
+
+[Chorus]
+Every time I hear that song
+I'm back where I don't belong
+Standing in the kitchen light
+Missing you at 2 AM tonight
+
+[Verse]
+Your jacket's still hanging by the door
+I can't decide what I'm keeping it for
+The plants you left are barely holding on
+Just like me since you've been gone
+
+[Pre-Chorus]
+I keep saying I'm fine
+But my eyes give me away
+
+[Chorus]
+Every time I hear that song
+I'm back where I don't belong
+Standing in the kitchen light
+Missing you at 2 AM tonight
+
+[Bridge]
+Maybe someday I'll move on
+Maybe someday I'll be strong
+But tonight I'm letting it hurt
+Every word, every verse
+
+[Chorus]
+Every time I hear that song
+I'm back where I don't belong
+Standing in the kitchen light
+Missing you at 2 AM tonight
+
+[Outro]
+Missing you at 2 AM...
+```
+
+```text Style
+indie pop, melancholic, female vocal, fingerpicked acoustic guitar, soft drums, emotional
+```
+
+```text Title
+2 AM Tonight
+```
+
+</CodeGroup>
+
+## Style Field Tips
+
+The Style field is one of the most powerful levers in Custom Mode. Follow this formula for consistent results:
+
+**`[genre] + [subgenre or era] + [vocal style] + [key instruments] + [energy/mood]`**
+
+```text
+dark folk, Americana, male baritone, banjo and fiddle, slow and haunting
+```
+
+```text
+90s R&B, smooth soul, female vocal, lush strings, mid-tempo
+```
+
+```text
+heavy metal, thrash, no vocals, distorted guitar, double bass drum, aggressive
+```
+
+```text
+lo-fi jazz, late night, female breathy vocal, upright bass, muted trumpet
+```
+
+<Warning>
+  Keep your Style field under **120 characters**. Beyond that, Suno may deprioritize some descriptors. If you have a lot to specify, put the most important elements first.
+</Warning>
+
+## Creating Instrumental Tracks
+
+To generate a fully instrumental song in Custom Mode, you have two options:
+
+**Option 1 — Leave the Lyrics field empty.** Suno will generate music without any vocals.
+
+**Option 2 — Use `[Instrumental]` tags throughout your lyrics field.** This gives you finer control, letting you label specific sections as instrumental while keeping others available for vocals.
+
+```text
+[Intro][Instrumental]
+
+[Verse]
+Walk with me through the fallen leaves...
+
+[Chorus]
+We were golden, we were gold...
+
+[Solo][Instrumental]
+
+[Outro][Instrumental]
+```
+
+<Tip>
+  Pair the `[Solo]` tag with a specific instrument in the Style field — e.g., `electric guitar solo` — to get a true shredding moment right where you want it.
+</Tip>
+
+## Tips for Better Custom Mode Results
+
+- **Match your lyrics to the style.** Dense, multi-syllable lyrics work well in rap and folk; shorter, punchy lines suit pop and rock choruses.
+- **Don't over-tag.** One structural tag per section is usually enough. Stacking too many tags can confuse the model.
+- **Use repetition intentionally.** Repeating a chorus block tells Suno it's a recurring hook — the model will treat it with more musical weight.
+- **Leave breathing room.** Short line breaks between sections help Suno parse your structure cleanly.
+- **Iterate.** Generate two variations, keep the one you prefer, then extend or re-record individual sections in the Song Editor.

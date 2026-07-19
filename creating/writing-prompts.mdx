@@ -1,0 +1,154 @@
+---
+title: "Writing Effective Prompts for Suno AI Music"
+sidebarTitle: "Writing Prompts"
+description: "Learn how to write prompts that get you great songs — covering genre, mood, instrumentation, exclusions, vocal controls, and creative sliders."
+---
+
+The prompt is the heart of every Suno creation. Whether you type three words or three sentences, what you write directly shapes the genre, mood, instrumentation, and lyrics Suno generates. Spending a few extra seconds crafting a clear prompt is the fastest way to get a song you love on the first try.
+
+## What Makes a Good Prompt
+
+A strong prompt answers four questions at once: *What genre is it? What mood does it evoke? What is it about? What does it sound like?* You don't need to answer all four in every prompt, but the more of these you cover, the more predictable and polished your result will be.
+
+| Element | Examples |
+|---|---|
+| **Genre** | indie folk, trap, bossa nova, cinematic orchestral |
+| **Mood** | melancholic, euphoric, tense, nostalgic, playful |
+| **Theme / subject** | summer road trip, heartbreak, overcoming fear |
+| **Instrumentation** | acoustic guitar, strings and brass, 808 bass, no drums |
+| **Tempo / energy** | slow and dreamy, uptempo, building crescendo |
+
+## Prompt Examples
+
+Start simple and add detail until Suno gives you exactly what you want.
+
+<CodeGroup>
+
+```text Simple
+a sad piano ballad about losing a friend
+```
+
+```text Medium
+upbeat 80s synth-pop with female vocals about driving at night
+```
+
+```text Detailed
+dark cinematic orchestral piece, no vocals, building tension,
+strings and brass, suitable for a thriller film trailer
+```
+
+</CodeGroup>
+
+<Tip>
+  Start with a simple prompt to hear Suno's interpretation, then open the Song Editor to refine the result — adjust lyrics, extend sections, or regenerate individual parts without starting over.
+</Tip>
+
+## Prompt-Writing Tips
+
+**Be specific about genre.** Broad terms like "pop" or "rock" leave a lot open. Try "dream-pop" or "garage rock" to narrow the sonic palette.
+
+**Name the mood, not just the topic.** "a song about my dog" is a topic. "a joyful, upbeat acoustic song celebrating my dog" adds mood and instrumentation — and gets you a much better result.
+
+**Mention tempo and energy.** Words like *slow*, *driving*, *frenetic*, or *laid-back* shape the rhythm and arrangement even if you never specify a BPM.
+
+**Describe the instruments.** If you hear a specific sound in your head — fingerpicked acoustic guitar, a Rhodes piano, a string quartet — say so. Suno reads instrument references reliably.
+
+**Keep it under ~200 characters for the best results.** Very long prompts can dilute focus. If you have more to say, use [Custom Mode](/creating/custom-mode) instead.
+
+## Using Exclusions
+
+Tell Suno what you *don't* want by adding exclusions directly to your prompt. This is especially useful when a genre typically includes elements you'd like to leave out.
+
+```text
+lo-fi hip hop, nostalgic, no drums, no vocals
+```
+
+```text
+upbeat country pop, no pedal steel, no twang
+```
+
+```text
+cinematic score, epic and emotional, no choir, no electric guitar
+```
+
+Common exclusions:
+- `no vocals` / `instrumental only` — removes all singing
+- `no auto-tune` — steers away from heavily processed vocals
+- `no drums` / `no percussion` — strips the rhythm section
+- `no electric guitar` — keeps things acoustic or synth-based
+
+<Note>
+  The **Instrumental** toggle in the Create panel is the most reliable way to produce a purely instrumental track. Use `no vocals` in the prompt as a secondary reinforcement if needed.
+</Note>
+
+## Magic Song Descriptions
+
+Not sure where to start? Let Suno write the prompt for you. Click the **Magic** wand icon in the prompt field and Suno will auto-generate a full song description based on a seed idea or genre you provide. You can accept it as-is, tweak it, or use it as inspiration for your own prompt.
+
+## Vocal Controls
+
+### Gender
+
+Use the **Vocal Gender** selector to steer Suno toward a male, female, or unspecified voice. You can also embed gender cues directly in the prompt:
+
+```text
+soulful male baritone, jazz ballad, late-night atmosphere
+```
+
+```text
+bright female soprano, classical crossover, uplifting
+```
+
+Leaving gender unspecified lets Suno choose the voice it thinks best fits the style.
+
+### Vocal Style
+
+Describe the vocal character in your prompt alongside genre and mood:
+
+```text
+raspy male vocal, blues rock, gritty and raw
+```
+
+```text
+airy breathy female vocal, bedroom pop, intimate
+```
+
+```text
+harmonized choir vocals, gospel, powerful and uplifting
+```
+
+For deeper vocal customization — including Personas and uploaded voices — see the [Voices & Styles guide](/creating/voices-and-styles).
+
+## Creative Sliders
+
+Pro and Premier users can fine-tune generations with three creative sliders before hitting **Create**.
+
+<CardGroup cols={3}>
+  <Card title="Weirdness" icon="sparkles">
+    Controls how experimental or unconventional the output is. Low = familiar and polished. High = unexpected structures, unusual timbres, and surprising choices.
+  </Card>
+  <Card title="Structure" icon="sliders">
+    Adjusts how tightly the song adheres to traditional song structure (verse-chorus-bridge). Lower values produce more freeform compositions.
+  </Card>
+  <Card title="Style Intensity" icon="wand-magic-sparkles">
+    Determines how strongly Suno leans into the style tags and prompt descriptors. Higher values produce more stylistically "on-the-nose" results.
+  </Card>
+</CardGroup>
+
+<Tip>
+  Crank the **Weirdness** slider for experimental or avant-garde pieces. Keep it low when you need a commercially polished, radio-ready sound.
+</Tip>
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion title="Can I write lyrics in the prompt?">
+    The standard prompt field is designed for *style and mood descriptions*, not lyrics. If you paste lyrics into the prompt, Suno may interpret them as descriptive text rather than sing them verbatim. To write your own lyrics, use [Custom Mode](/creating/custom-mode) — it gives you a dedicated lyrics field with full structural tag support.
+  </Accordion>
+  <Accordion title="How specific should I be?">
+    Aim for a sweet spot: specific enough to guide the genre, mood, and instrumentation, but not so prescriptive that you leave no room for Suno's creativity. A prompt of 20–80 words usually hits the mark. If you find yourself writing a paragraph of instructions, Custom Mode will give you more control.
+  </Accordion>
+  <Accordion title="What if I don't get what I want?">
+    First, try regenerating — each run produces two new variations and the results can differ significantly. If the style is consistently off, add more specific genre or mood language. If the lyrics miss the mark, switch to Custom Mode and write them yourself. You can also use the Song Editor to extend, re-record, or replace specific sections of a generation you mostly like.
+  </Accordion>
+</AccordionGroup>

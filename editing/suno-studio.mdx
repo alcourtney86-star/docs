@@ -1,0 +1,249 @@
+---
+title: "Suno Studio: Browser-Based Generative Audio Workstation"
+sidebarTitle: "Suno Studio"
+description: "Build full productions in Suno Studio — layer AI stems, recorded audio, and uploads on a multitrack timeline with MIDI export and version control."
+---
+
+Suno Studio is a browser-based **Generative Audio Workstation (GAW)** that combines the power of a traditional digital audio workstation with Suno's AI generation engine. Instead of a single song file, you work on a full multitrack **project** — layering AI-generated stems, uploaded audio, and live-recorded tracks on a shared timeline, then exporting the result directly to your Library or as individual files to your device.
+
+<Warning>
+  Suno Studio is available exclusively on the **Premier** plan. Upgrade to Premier to access Studio and all of its features.
+</Warning>
+
+---
+
+## Opening Suno Studio
+
+To launch Suno Studio:
+
+1. In the left navigation panel, click the **Studio** icon (located under the **Create** section).
+2. A new Studio project opens with an empty timeline.
+
+Each project auto-saves continuously — there is no Save button. To access previous versions, click the **Project Menu** (top left) and select **Versions**. All versions are timestamped so you can roll back to any earlier state.
+
+---
+
+## The Studio Interface
+
+Suno Studio has four main areas:
+
+<CardGroup cols={2}>
+  <Card title="Timeline" icon="timeline">
+    The central multitrack view where all audio tracks and clips live. Each row is a separate track — AI stems, uploaded audio, or recorded audio. Scroll horizontally to move through time.
+  </Card>
+  <Card title="Context Bar" icon="bars">
+    A dynamic toolbar above the Timeline that changes based on your current selection. Options include **Create** (generate new AI content), **Open Library** (pull in existing songs), and **Upload Audio**.
+  </Card>
+  <Card title="Details Panel" icon="sidebar">
+    A panel on the right side showing information about the selected song or clip. Click **Remix / Edit** to access editing options. Use the **arrow icons** to add individual stems from a song directly to the Timeline.
+  </Card>
+  <Card title="Transport" icon="play">
+    Controls at the top of the interface: **Play/Pause** (or press **spacebar**), **Record**, position indicator, and the **Upload** button for importing audio files.
+  </Card>
+</CardGroup>
+
+---
+
+## Core Workflows
+
+### 1. Import a Song and Add Its Stems to the Timeline
+
+Bring an existing Suno song into your project and work with its individual stems as separate tracks.
+
+<Steps>
+  <Step title="Open your Library from the Context Bar">
+    Click **Open Library** in the **Context Bar** above the Timeline. Your Suno Library opens in a panel.
+  </Step>
+  <Step title="Select a song">
+    Click a song in your Library. Its details appear in the **Details Panel** on the right, including a list of available stems.
+  </Step>
+  <Step title="Add individual stems">
+    In the Details Panel, click the **arrow icon** next to any individual stem (Vocals, Drums, Bass, etc.) to add just that stem to the Timeline as its own track.
+  </Step>
+  <Step title="Or add all stems at once">
+    Click **Insert All** in the Details Panel to drop all available stems onto the Timeline simultaneously, each on its own track.
+  </Step>
+</Steps>
+
+<Tip>
+  Adding stems individually gives you control over track order and lets you skip stems you don't need. Use **Insert All** when you want a complete starting point and plan to mute tracks you don't want later.
+</Tip>
+
+---
+
+### 2. Add a New AI-Generated Instrument Track
+
+Generate entirely new AI audio directly within your Studio project.
+
+<Steps>
+  <Step title="Open Create in the Context Bar">
+    Click **Create** in the **Context Bar**. A generation panel expands below the bar.
+  </Step>
+  <Step title="Expand Advanced Options">
+    Click **Advanced Options** to reveal fields for style, instrumentation, lyrics, and other generation parameters.
+  </Step>
+  <Step title="Describe your instrument track">
+    Enter a prompt describing the sound you want — for example, *"warm fingerpicked acoustic guitar, slow and melancholic"* or *"punchy 808 kick and hi-hat pattern, 90 BPM hip-hop."*
+  </Step>
+  <Step title="Generate">
+    Click **Create**. Suno generates **2 Take Lanes** for the new track — two different versions you can audition before committing.
+  </Step>
+</Steps>
+
+---
+
+### 3. Use Take Lanes and Comping
+
+Take Lanes let you keep multiple generated versions of a track and combine the best parts from each into a single composite clip.
+
+<Steps>
+  <Step title="Access Take Lanes">
+    On any track that has multiple versions, click the **column icon** at the left edge of the track. From the dropdown, select **Show Take Lanes**. The track expands to reveal the individual lanes.
+  </Step>
+  <Step title="Audition each lane">
+    Click the **speaker icon** on any Take Lane to audition that version in context with the rest of the Timeline.
+  </Step>
+  <Step title="Copy a lane to the Main Track">
+    Once you've found the version you want, click **Copy to Main Track**. That lane's audio becomes the active clip on the main track.
+  </Step>
+  <Step title="Comp across lanes">
+    For more advanced control, select different regions from different Take Lanes and copy each to the Main Track individually. This is called **comping** — assembling one perfect composite take from the best moments of several generated versions.
+  </Step>
+</Steps>
+
+<Tip>
+  Comping is especially powerful for vocals and lead instruments. Generate 4–5 Take Lanes of the same section, then pick the best phrase from each lane to build a single flawless performance.
+</Tip>
+
+---
+
+### 4. Upload or Record Audio
+
+Bring in your own audio — whether a pre-recorded file or a live microphone performance.
+
+**To upload a file:**
+
+<Steps>
+  <Step title="Click Upload in the Transport">
+    In the Transport area at the top, click the **Upload** button.
+  </Step>
+  <Step title="Select your file">
+    Choose an audio file from your device (WAV, MP3, and other common formats are supported). The file is added to the Timeline as a new track.
+  </Step>
+</Steps>
+
+**To record live audio:**
+
+<Steps>
+  <Step title="Add an audio track">
+    In the Context Bar or track list, add a new **audio track** to the Timeline.
+  </Step>
+  <Step title="Set your timeline position">
+    Click the position indicator on the Timeline to place the playhead where you want recording to begin.
+  </Step>
+  <Step title="Arm the track">
+    Click the **red Record button** on the track's left panel to arm it for recording.
+  </Step>
+  <Step title="Start recording">
+    Press **Record** in the Transport (or use the keyboard shortcut). Recording begins from the playhead position. Press **Stop** when you're done.
+  </Step>
+</Steps>
+
+<Note>
+  Make sure your browser has microphone permission for Suno before attempting to record. You'll be prompted to grant access on your first recording attempt.
+</Note>
+
+---
+
+### 5. Export Your Project
+
+When your project is ready, export it in the format that fits your intended use.
+
+<Steps>
+  <Step title="Click Export">
+    Click the **Export** button in the top-right corner above the Timeline. An export options panel opens.
+  </Step>
+  <Step title="Choose your export type">
+    Select from three options:
+    - **Full Song** — renders the entire Timeline mix and saves it as a new song in your Suno Library.
+    - **Selected Time Range** — renders only the highlighted/selected portion of the Timeline and saves it to your Library. Useful for exporting a single section or loop.
+    - **Multitracks** — downloads each individual track and stem as a separate file to your device. Ideal for handing off to another producer, importing into an external DAW, or archiving individual components.
+  </Step>
+  <Step title="Confirm and export">
+    Confirm your selection. Full Song and Selected Time Range exports appear in your Library within moments. Multitracks downloads initiate immediately as a ZIP archive.
+  </Step>
+</Steps>
+
+---
+
+## Generate From the Timeline: Drag to Create
+
+One of Studio's most powerful features lets you use an existing segment of your Timeline as the seed for an entirely new song.
+
+<Steps>
+  <Step title="Select a region on the Timeline">
+    Click and drag to highlight any region on the Timeline — a verse, a loop, a breakdown, or any combination of tracks at a given moment in time.
+  </Step>
+  <Step title="Drag it into the Create panel">
+    Drag the highlighted region up into the **Create** panel in the Context Bar.
+  </Step>
+  <Step title="Generate a new song">
+    Suno uses that audio segment as inspiration to generate an entirely new song. Add a prompt to steer the direction, or let Suno interpret the segment freely.
+  </Step>
+</Steps>
+
+<Tip>
+  Use this to rapidly explore variations. Drag your chorus into Create and generate five different versions — each becomes a new song in your Library that you can bring back into Studio as additional stems.
+</Tip>
+
+---
+
+## Auto-Save and Version History
+
+Suno Studio saves your project automatically as you work — every action is preserved in the background. To revisit or restore an earlier state:
+
+<Steps>
+  <Step title="Open the Project Menu">
+    Click the **Project Menu** icon in the top-left corner of Studio.
+  </Step>
+  <Step title="Select Versions">
+    Choose **Versions** from the menu. A list of timestamped save points appears.
+  </Step>
+  <Step title="Restore a version">
+    Click any version to preview or restore it. Your current state is always saved as its own version before you restore, so you won't lose recent work.
+  </Step>
+</Steps>
+
+---
+
+## MIDI Export
+
+Premier subscribers can export MIDI files directly from Suno Studio, capturing the melodic and harmonic content of AI-generated tracks as editable note data.
+
+To export MIDI:
+
+1. Select the track or clip you want to export as MIDI.
+2. Click **Export** (top right) and choose the **MIDI** format option.
+3. The MIDI file downloads to your device.
+
+Import the MIDI file into any DAW or notation software to trigger your own virtual instruments, transpose the melody, or use the composition as a template for further arrangement.
+
+---
+
+## Quick Reference
+
+<AccordionGroup>
+  <Accordion title="Keyboard shortcuts">
+    - **Spacebar** — Play / Pause
+    - **Delete / Backspace** — Remove selected clip
+  </Accordion>
+  <Accordion title="How do I sync Studio with my external DAW?">
+    Export your project as **Multitracks** to get individual WAV files for each stem and track. In your DAW, set the project BPM to match the Studio project tempo, then import the WAV files onto separate audio tracks. For the tightest sync, export stems as **Tempo-Locked WAVs** via Stem Extraction before bringing them into Studio.
+  </Accordion>
+  <Accordion title="Can I use Suno Studio on mobile?">
+    Suno Studio is optimized for desktop browsers. While you may be able to load the interface on a tablet, a full keyboard and mouse setup provides the best experience for multitrack editing and comping workflows.
+  </Accordion>
+  <Accordion title="What happens to my Studio projects if I downgrade from Premier?">
+    Your existing Studio projects remain in your account and are viewable, but you won't be able to edit or create new Studio projects without an active Premier subscription.
+  </Accordion>
+</AccordionGroup>

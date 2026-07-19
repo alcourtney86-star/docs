@@ -1,0 +1,146 @@
+---
+title: "Voices, Personas & Style Controls in Suno"
+sidebarTitle: "Voices & Styles"
+description: "Control vocal gender, choose preset voice characters, create Personas with your own voice, and use Inspo to reference an existing song's style in Suno."
+---
+
+Suno gives you a layered set of tools to shape how your song *sounds* — from a simple gender toggle all the way to a custom voice model trained on your own recordings. The right combination of vocal controls and style references is what turns a good generation into your generation.
+
+## Vocal Controls (All Users)
+
+Every Suno user can steer the voice in their songs using two basic controls.
+
+### Vocal Gender
+
+The **Vocal Gender** selector steers Suno toward a male, female, or unspecified voice. You'll find it in the Create panel alongside the prompt field. Setting it to *Unspecified* lets Suno choose whatever voice it thinks best fits the style you described.
+
+You can also reinforce gender through the prompt itself:
+
+```text
+warm male tenor, acoustic folk, confessional and heartfelt
+```
+
+```text
+powerful female mezzo-soprano, cinematic pop, anthemic chorus
+```
+
+### Vocal Style in Your Prompt
+
+Describe the character of the voice just like you'd describe an instrument. The more specific you are, the more Suno can match your vision:
+
+```text
+raspy, weathered male vocal — blues rock, late-night bar atmosphere
+```
+
+```text
+airy, breathy female vocal — dream pop, reverb-soaked, intimate
+```
+
+```text
+robotic, vocoder-processed voice — synthwave, 80s sci-fi aesthetic
+```
+
+## Voices Feature
+
+The **Voices** panel lets you browse and select from a curated set of preset vocal characters. Each preset has a distinct tonal quality — warm and smooth, gritty and edgy, bright and crisp, and so on. Selecting a preset voice pins that character to your generation, giving you more consistency across multiple songs with the same "singer."
+
+Browse preset voices in the Create panel by clicking the **Voice** selector. You can preview each voice before committing to a generation.
+
+## Personas (Pro & Premier)
+
+<Note>
+  Personas require a **Pro or Premier** subscription. Free users can use preset voices and vocal gender controls.
+</Note>
+
+A Persona is a custom vocal identity built from your own voice recordings. Once created, you can apply your Persona to any song — making every generation sound like *you* (or a specific character you've crafted) singing it.
+
+### Creating a Persona
+
+<Steps>
+  <Step title="Go to your Persona settings">
+    Navigate to your profile or the Voices section and select **Create Persona**.
+  </Step>
+  <Step title="Record or upload your voice">
+    Use the in-browser recorder to capture a short vocal sample, or upload a pre-recorded audio file (MP3 or WAV). Aim for a clean, dry recording — minimal background noise, no heavy reverb.
+  </Step>
+  <Step title="Name and save your Persona">
+    Give your Persona a name so you can identify it across projects. Suno processes the sample and creates a reusable vocal model.
+  </Step>
+  <Step title="Apply your Persona to a generation">
+    In the Create panel, select your saved Persona from the Voice selector. Any song you generate will use your Persona's vocal character.
+  </Step>
+</Steps>
+
+<Tip>
+  Record several short phrases at different pitches and dynamics when creating a Persona. A wider range of vocal samples gives Suno more to work with and produces a more flexible, realistic result.
+</Tip>
+
+### Using Personas Consistently
+
+Personas let you build a consistent vocal identity across an entire album or project. Combine your Persona with [Custom Mode](/creating/custom-mode) for the tightest control: you write the exact lyrics, set the style, and Suno sings it in your voice.
+
+## Inspo: Style Reference
+
+The **Inspo** feature lets you point to an existing Suno song and use its *style* as a reference point for your new creation. Inspo is about sonic influence — the genre, energy, production choices, and feel of the reference track — not a copy of the actual audio or any underlying copyrighted material.
+
+### How to Use Inspo
+
+1. Find a Suno song whose style you want to reference — your own previous generations, trending tracks, or anything in the Suno library.
+2. In the Create panel, click **Inspo** and paste or search for the song.
+3. Set how strongly the reference should influence your generation (a low Inspo weight keeps it subtle; a high weight leans hard into the reference style).
+4. Write your prompt or switch to Custom Mode to add your own lyrics.
+
+<Tip>
+  Combining **Inspo** with **Custom Mode** gives you the most control of any workflow on Suno: the sonic palette comes from the Inspo reference, the lyrics are yours, and the style tags fill in the gaps.
+</Tip>
+
+<Note>
+  Inspo works best when the reference song has a clearly defined, distinctive style. A heavily genre-blended reference may produce more unpredictable results.
+</Note>
+
+## Style Sliders (Pro & Premier)
+
+Pro and Premier users can adjust three sliders before generating to fine-tune how Suno interprets the style prompt.
+
+<CardGroup cols={3}>
+  <Card title="Weirdness" icon="sparkles">
+    Dial up experimental, unconventional choices in structure, timbre, and arrangement. Keep it low for polished, accessible results; push it high for avant-garde or genre-defying outputs.
+  </Card>
+  <Card title="Structure" icon="sliders">
+    Controls how closely Suno follows traditional song structure (intro → verse → chorus → bridge → outro). Lower values allow more freeform, ambient, or through-composed results.
+  </Card>
+  <Card title="Style Intensity" icon="wand-magic-sparkles">
+    Determines how literally Suno interprets your style descriptors. Higher values produce a more "on-brand" stylistic result; lower values give Suno more creative latitude within the style.
+  </Card>
+</CardGroup>
+
+## Custom Models (Pro & Premier)
+
+<Note>
+  Custom Models require a **Pro or Premier** subscription and are built on top of Suno v5.5.
+</Note>
+
+A Custom Model is a fine-tuned version of Suno's v5.5 model trained on audio *you* provide. Where a Persona customizes the voice, a Custom Model customizes the entire sonic aesthetic — the production style, instrumental character, mix decisions, and overall sound signature.
+
+Use cases for Custom Models:
+- Building a signature production sound for a label or artist project
+- Creating a model that reliably produces a very niche or unusual genre
+- Training on a set of your own productions to capture your unique arrangement style
+
+Upload your audio samples in the Custom Models section of your account settings, follow the training workflow, and then select your Custom Model from the model picker in the Create panel — right alongside v4, v4.5, v5, and v5.5.
+
+## Choosing the Right Model
+
+Suno offers multiple generation models. Higher model versions generally produce more natural vocals, richer production, and better prompt adherence.
+
+| Model | Available To |
+|---|---|
+| v4 | All users |
+| v4.5 | All users |
+| v4.5+ | All users |
+| v5 | All users |
+| v5.5 | Pro & Premier |
+
+<Tip>
+  Use **v5.5** for the best vocal quality and most nuanced style interpretation. It's the recommended model for any project where quality matters most.
+</Tip>

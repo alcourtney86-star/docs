@@ -1,72 +1,84 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "almond",
+  "name": "Suno",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#fc6627",
+    "light": "#fceee9",
+    "dark": "#040404"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "favicon": "https://media.brand.dev/688a9022-4072-4592-a89c-21ff1dcd1cdc.png",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://media.brand.dev/f7c409bb-2fe1-4795-855b-0a5f9a9cc04a.svg",
+    "dark": "https://media.brand.dev/f7c409bb-2fe1-4795-855b-0a5f9a9cc04a.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://help.suno.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Open App",
+      "href": "https://suno.com/create"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "plans-and-credits"
+            ]
+          },
+          {
+            "group": "Creating Music",
+            "pages": [
+              "creating/writing-prompts",
+              "creating/custom-mode",
+              "creating/voices-and-styles",
+              "creating/upload-audio"
+            ]
+          },
+          {
+            "group": "Editing",
+            "pages": [
+              "editing/song-editor",
+              "editing/extend-and-remix",
+              "editing/stem-extraction",
+              "editing/suno-studio"
+            ]
+          },
+          {
+            "group": "Account & Library",
+            "pages": [
+              "account/library",
+              "account/sharing",
+              "account/commercial-rights"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/common-questions",
+              "faq/troubleshooting"
+            ]
+          }
+        ]
+      }
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/suno_ai_",
+      "instagram": "https://www.instagram.com/suno.ai"
     }
   }
 }
